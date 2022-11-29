@@ -1,26 +1,9 @@
 {
-  "redirects": [
-    {
-      "source": "/blog/post",
-      "has": [
+    "redirects": [
         {
-          "type": "host",
-          "value": "75290-nuxtjs-redirects.vercel.app"
+            "source": "/(.*)",
+            "destination": "https://timezones-api.datasette.io/$1",
+            "statusCode": 301
         }
-      ],
-      "destination": "https://vercel.com/blog/how-the-web-evolves",
-      "permanent": false
-    },
-    {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "75290-nuxtjs-redirects.vercel.app"
-        }
-      ],
-      "destination": "https://www.theverge.com/",
-      "permanent": false
-    }
-  ]
+    ]
 }
